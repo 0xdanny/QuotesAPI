@@ -20,6 +20,6 @@ func main() {
 
 	http.HandleFunc("/", server.Router.ServeHTTP)
 
-	log.Println("Server listening on port 8080")
+	log.Println("Server listening on port 8080...")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
